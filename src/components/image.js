@@ -19,9 +19,11 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "selfphoto.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 150
+                  maxHeight:150
+                  ) {
               ...GatsbyImageSharpFluid
-            }
+            },
           }
         }
       }
