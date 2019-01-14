@@ -1,0 +1,12 @@
+.employment {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(1,auto);
+  grid-template-rows: repeat(3,auto);
+  align-items: center;
+  padding: 1em 0;
+}
+.employment h2, p {
+  margin-bottom: 0;
+  padding:0.1em 0;
+}
