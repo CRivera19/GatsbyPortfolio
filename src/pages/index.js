@@ -3,7 +3,10 @@ import About from '../components/about/about'
 import Employment from '../components/employment/employment'
 import Portfolio from '../components/Portfolio/portfolio'
 import Layout from '../components/layout/layout'
-import SEO from '../components/seo'
+import Footer from '../components/footer/footer'
+import SEO from '../utils/seo'
+import '../styles/styles.scss'
+import '../utils/typography'
 
 const IndexPage = () => (
   <Layout >
@@ -11,7 +14,7 @@ const IndexPage = () => (
     <About />
     <Employment />
     <Portfolio />
-
+    <Footer />
   </Layout>
 )
 

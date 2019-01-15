@@ -3,13 +3,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle, siteJob }) => (
-  <div style={{
-        background: `crimson`,
-        paddingLeft: `0.5em`,
-        borderBottom:`3px solid grey`,
-    }}
-  >
-      <h1 style={{ paddingTop: `0.3em`, marginBottom:`0` ,}}>
+  <div className="header">
+      <h1 className="header__title">
         <Link
           to="/"
           style={{

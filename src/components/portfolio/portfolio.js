@@ -1,6 +1,5 @@
 import React from 'react'
 import './portfolio.css'
-import Image from '../image'
 
 const Portfolio = () => (
       <article className="portfolio">
@@ -8,17 +7,17 @@ const Portfolio = () => (
         <div className='cardDeck'>
           <div className='card'>
             <h3>TodoApp</h3>
-            <div className="cardImage"><Image /></div>
+            <div className="cardImage"></div>
             <p className='cardContent'>lorem goes here lorem goes herelorem goes herelorem goes herelorem goes herelorem goes herelorem goes here</p> 
           </div>
           <div className='card'>
             <h3>TodoApp</h3>
-            <div className="cardImage"><Image /></div>
+            <div className="cardImage"></div>
             <p className='cardContent'>lorem goes here lorem goes herelorem goes herelorem goes herelorem goes herelorem goes herelorem goes here</p> 
           </div>
           <div className='card'>
             <h3>TodoApp</h3>
-            <div className="cardImage"><Image /></div>
+            <div className="cardImage"></div>
             <p className='cardContent'>lorem goes here lorem goes herelorem goes herelorem goes herelorem goes herelorem goes herelorem goes here</p> 
           </div>
         </div>
