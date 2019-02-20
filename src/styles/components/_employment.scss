@@ -1,0 +1,39 @@
+// .employment {
+//   display: flex;
+//   align-items: start;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin:1.5em 0;
+// }
+.employment {
+  display: grid;
+  align-content: center;
+  margin:1.5em 0;
+}
+.employment h2 {
+  margin:0;
+  padding-top:0.2em;
+}
+.employment p {
+  margin: 0;
+}
+
+@media only screen and (max-width:420px) {
+  .employment h2 {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width:660px) {
+
+}
+@media (min-width: 992px) {
+  .employment {
+    // padding-bottom: 40px;
+  } 
+  .employment h2 {
+    padding-top: 8px;
+  }
+  .employment :nth-last-child(1) {
+    margin-bottom: 40px;
+  }
+ }

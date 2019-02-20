@@ -1,2 +1,7 @@
-@import '../styles/base/base.scss';
-@import '../styles/components/header.scss';
+@import '../styles/base/_base';
+@import '../styles/components/_header';
+@import '../styles/components/_about';
+@import '../styles/components/employment';
+@import '../styles/components/portfolio';
+
+@import '../styles/base/media';

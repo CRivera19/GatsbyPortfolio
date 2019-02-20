@@ -1,5 +1,4 @@
 import React from 'react'
-import './portfolio.css'
 
 const Portfolio = () => (
       <article className="portfolio">

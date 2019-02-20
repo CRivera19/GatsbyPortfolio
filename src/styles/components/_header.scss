@@ -1,6 +1,31 @@
 .header {
-  background: white;
+  background: gray;
+  text-align: center;
+  border-bottom: 0.2em solid black;
 }
-.header__title {
-  color: aquamarine;
+.header a {
+  color:white;
+}
+.header h1 {
+  margin:0;
+  padding:8px;
+  font-size: 1.5em;
+}
+.header h3 {
+  margin: 0;
+  padding: 8px;
+  font-size: 1em;
+}
+
+@media only screen and (min-width:660px) {
+  .header {
+    // text-align: left;
+    padding-left: 0.8em;
+  }
+  .header h1 {
+    font-size: 1.4em;
+  }
+  .header h3 {
+    font-size: 1em;
+  }
 }
