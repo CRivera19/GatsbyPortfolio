@@ -5,18 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 100, height: 100) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -26,28 +25,32 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata;
   return (
-    <div>
+    <div id="bio">
       <Image
-        fixed={data.avatar.childImageSharp.fixed}
+        fluid={data.avatar.childImageSharp.fluid}
         alt={author}
         style={{
           marginBottom: 0,
-          minWidth: 50,
+          maxWidth: 100,
           borderRadius: `100%`,
+          border: "green solid 3px"
         }}
         imgStyle={{
-          borderRadius: `50%`,
+          borderRadius: `50%`
         }}
       />
-      <p>
-        Written by <strong>{author}</strong> who lives and works in Mesa, Arizona building useful things.
-      </p>
+      <h1>{author}</h1>
+      <div id="summary">
+        <strong>Web developer</strong> currently studying Javascript, React, and
+        Gatsby. I am 26, born and raised in California currently living in Mesa,
+        Arizona.
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

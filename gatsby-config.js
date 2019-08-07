@@ -5,7 +5,7 @@ module.exports = {
     description: `A gatsby blog built to showcase work and track progress.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `majinfood`,
 
     },
   },
@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `ChrisRivera Blog`,
+        short_name: `CRiveraBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

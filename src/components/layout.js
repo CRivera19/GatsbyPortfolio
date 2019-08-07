@@ -1,37 +1,45 @@
-import React from "react"
-import { Link } from "gatsby"
-
+import React from "react";
+import { Link } from "gatsby";
 
 class Layout extends React.Component {
   render() {
-    const { location, children, author } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { location, children, author } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
         <>
-        <h1> <Link to= {`/`} >{ author}  </Link> </h1>
-        <h2>Web Developer</h2>
+          <nav>{/* <h1>{ author }</h1>
+        <h3>Web Developer</h3> */}</nav>
         </>
-      )
+      );
     } else {
       header = (
-        <h3> <Link to={`/`} > {author} </Link> </h3>
-      )
+        <>
+          <nav>
+            <h3>
+              {" "}
+              <Link to={`/`}> {author} </Link>{" "}
+            </h3>
+          </nav>
+        </>
+      );
     }
     return (
-      <div>
+      <div id="layout">
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
         </footer>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;
